@@ -5,7 +5,7 @@ int main(void) {
     char op;
     double a, b, result;
 
-    printf("Simple Calculator\n");
+    printf("MY Simple Calculator\n");
     printf("Enter expression (e.g. 3 + 4): ");
 
     if (scanf("%lf %c %lf", &a, &op, &b) != 3) {

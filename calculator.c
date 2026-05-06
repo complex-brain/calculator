@@ -32,6 +32,14 @@ int main(void) {
             }
             result = a / b;
             break;
+
+        case '%':
+            if (b == 0.0) {
+                fprintf(stderr, "Error: modulo by zero.\n");
+                return EXIT_FAILURE;
+            }
+            result = fmod(a, b);
+            break;
         default:
             fprintf(stderr, "Error: unknown operator '%c'.\n", op);
             return EXIT_FAILURE;
